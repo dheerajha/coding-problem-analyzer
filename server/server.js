@@ -28,6 +28,6 @@ if (!process.env.GEMINI_API_KEY) {
   );
 }
 
-app.listen(PORT, () => {
-  console.log(`Core Problem server listening on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Core Problem server listening on port ${PORT}`);
 });
