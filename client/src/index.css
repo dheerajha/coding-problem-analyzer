@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-paper text-ink font-serif;
+  background-image: repeating-linear-gradient(theme('colors.grid.DEFAULT') 0 1px, transparent 1px 32px);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-paper-dark text-ink-dark;
+    background-image: repeating-linear-gradient(theme('colors.grid.dark') 0 1px, transparent 1px 32px);
+  }
+}
+
+.notebook-textarea {
+  background-image: repeating-linear-gradient(theme('colors.grid.DEFAULT') 0 1px, transparent 1px 30.5px);
+  background-position: 0 6px;
+}
+@media (prefers-color-scheme: dark) {
+  .notebook-textarea {
+    background-image: repeating-linear-gradient(theme('colors.grid.dark') 0 1px, transparent 1px 30.5px);
+  }
+}
