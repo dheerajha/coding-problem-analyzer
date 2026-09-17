@@ -3,7 +3,7 @@ import { buildExtractionPrompt } from '../prompts/extractionPrompt.js';
 import { parseModelJson } from './parseJson.js';
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
 
 /**
  * Stage 1 — Problem Extraction.
